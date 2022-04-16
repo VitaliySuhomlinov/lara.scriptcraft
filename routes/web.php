@@ -15,10 +15,8 @@ use App\Http\Controllers\Admin\MainController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('/');
 
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function (){
     Route::get('/', [MainController::class, 'show_index'])->name('admin.index');
 });
-
-
