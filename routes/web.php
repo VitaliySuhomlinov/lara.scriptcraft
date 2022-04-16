@@ -21,3 +21,4 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin'], function (){
     Route::get('/', [MainController::class, 'show_index'])->name('admin.index');
 });
 //German
+//2
